@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/off_white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏷️ Manage Categories 🐾"
+        android:textSize="28sp"
+        android:textColor="#BF360C"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="➕ Add New Category"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/orange_dark"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp"
+        android:backgroundTint="#FFFFFF">
+
+        <ListView
+            android:id="@+id/lvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-black"/>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
